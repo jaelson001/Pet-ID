@@ -1,41 +1,25 @@
-# Pet Registration App
+# Aplicativo de Registro de Animais de Estimação
+Este projeto é um aplicativo web simples para registro de animais de estimação. Ele consiste em duas telas principais: um formulário de registro e uma tela de resultados que inclui um código QR.
 
-This project is a simple web application for registering pets. It consists of two main screens: a registration form and a results display that includes a QR code.
+## Motivação
+Esse projeto é inspirado na ideia de cadastro de pets pelo governo federal, porém com menos informações e sem armazenamento de dados. Os dados são armazenados inteiramente no Qr-Code, que pode ser impresso e adicionado na coleira do animal, servindo de informativo sobre o animal, incluíndo contato do dono em caso se animais perdidos
 
-## Project Structure
+## Recursos
+- **Formulário de Cadastro de Pet**: Os usuários podem inserir informações como o nome do pet, o nome do dono e o número do WhatsApp do dono.
+- **Exibição dos Resultados**: Após o cadastro, o aplicativo exibe um cartão dando a opção de imprimir.
+- **Geração de QR Code**: Um QR code é gerado com base nas informações cadastradas, que não são armazenadas.
 
-```
-pet-registration-app
-├── src
-│   ├── index.html        # HTML structure for the pet registration form
-│   ├── result.html       # Displays the registered pet and owner information
-│   ├── styles
-│   │   └── style.css     # CSS styles for the application
-│   ├── scripts
-│   │   ├── form.js       # Handles form submission and redirects to result page
-│   │   └── qr-code.js    # Generates a QR code based on the registered data
-├── README.md             # Project documentation
-```
+## Como cadastrar
+3. Preencha os campos obrigatórios e envie o formulário.
+4. Você será redirecionado para a página de resultados, onde poderá ver as informações inseridas e o QR code gerado.
 
-## Features
-
-- **Pet Registration Form**: Users can enter the pet's name, owner's name, and owner's WhatsApp number.
-- **Results Display**: After submission, the application retrieves the data from the URL and displays it.
-- **QR Code Generation**: A QR code is generated based on the registered information, which can be printed.
-
-## Getting Started
-
-1. Clone the repository to your local machine.
-2. Open the `src/index.html` file in a web browser to access the pet registration form.
-3. Fill in the required fields and submit the form.
-4. You will be redirected to the results page where you can see the entered information and the generated QR code.
-
-## Technologies Used
-
+## Tecnologias Utilizadas
 - HTML
 - CSS
 - JavaScript
 
-## License
+## Licença
+Este projeto é de código aberto e está disponível sob a Licença MIT.
 
-This project is open-source and available under the MIT License.
+### Cópia e distribuição
+esse projeto possui código aberto, sendo completamente livre o acesso e auditoria do código, o código também pode ser clonado livremente e utilizado como base para projetos mais robustos

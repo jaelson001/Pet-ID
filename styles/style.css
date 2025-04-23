@@ -4,8 +4,11 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     print-color-adjust: exact;
+    background-image: linear-gradient(to bottom,#fff, transparent), url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
-
 .container {
     width: 80%;
     margin: auto;
