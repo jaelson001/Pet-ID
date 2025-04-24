@@ -108,6 +108,10 @@ form input[type="submit"]:hover {
     text-align: left;
     border-image: url("../img/bg.png") 1;
 }
+#pet-registration-form{
+    border: 10px solid #3bb0ac;
+    border-image: url("../img/bg.png") 1;
+}
 .card p {
     padding: 5px 10px;
     border: 2px solid #3bb0ac;

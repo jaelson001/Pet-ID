@@ -11,7 +11,7 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-4">Preencha os campos abaixo para gerar o Pet ID</h1>
-        <form id="pet-registration-form" class="row g-3">
+        <form id="pet-registration-form" class="row g-3 rounded">
             <div class="col-md-6">
                 <label for="pet-type" class="form-label">Animal:</label>
                 <input type="text" id="pet-type" name="pet-type" class="form-control border border-success" placeholder="Ex.: Cachorro" required>
@@ -67,15 +67,15 @@
             </div>
             <hr>
             <div class="col-md-6">
-                <label for="owner-name" class="form-label">Nome do tutor:</label>
-                <input type="text" id="owner-name" name="owner-name" class="form-control border border-success" placeholder="Ex.: João da Silva" required>
-            </div>
-
-            <div class="col-md-6">
                 <label for="owner-whatsapp" class="form-label">WhatsApp do tutor (somente números):</label>
                 <input type="text" id="owner-whatsapp" name="owner-whatsapp" class="form-control border border-success" placeholder= "Ex.: 11 999 888 777" required>
             </div>
 
+            <div class="col-md-6">
+                <label for="owner-name" class="form-label">Nome do tutor:</label>
+                <input type="text" id="owner-name" name="owner-name" class="form-control border border-success" placeholder="Ex.: João da Silva" required>
+            </div>
+            <hr>
             <div class="col-12 text-center">
                 <button type="submit" class="btn btn-dark">Gerar ID do pet</button>
             </div>
