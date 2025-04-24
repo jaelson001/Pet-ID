@@ -10,6 +10,9 @@ document.getElementById("pet-registration-form").addEventListener("submit", func
         petNeutered: document.querySelector('input[name="pet-neutered"]:checked').value,
         ownerName: document.getElementById("owner-name").value,
         ownerWhatsapp: document.getElementById("owner-whatsapp").value,
+        type: document.getElementById('pet-type').value,
+        birthDate: document.getElementById('pet-birthdate').value,
+        color: document.getElementById('pet-color').value
     };
 
     // Codifica os dados em Base64

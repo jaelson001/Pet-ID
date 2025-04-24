@@ -7,7 +7,7 @@ function generateQRCode(data) {
         width: 128,
         height: 128,
         colorDark: "#000000",
-        colorLight: "#ffffff",
+        colorLight: "#f2fbf7",
         correctLevel: QRCode.CorrectLevel.L,
     });
 }
@@ -36,13 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Exibe os detalhes do pet na tela
     petDetailsContainer.innerHTML = `
-        <p><strong>Nome do Pet:</strong> ${petData.petName}</p>
-        <p><strong>Sexo:</strong> ${petData.petSex === 'm' ? 'Masculino' : 'Feminino'}</p>
-        <p><strong>Raça:</strong> ${petData.petBreed}</p>
-        <p><strong>Naturalidade:</strong> ${petData.petOrigin}</p>
-        <p><strong>Castrado:</strong> ${petData.petNeutered === 's' ? 'Sim' : 'Não'}</p>
-        <p><strong>Nome do Dono:</strong> ${petData.ownerName}</p>
-        <p><strong>WhatsApp do Dono:</strong> ${petData.ownerWhatsapp}</p>
+        <p style="width:60%"><strong>Nome do Pet:</strong> ${petData.petName.toUpperCase()}</p>
+        <p style="width:20%"><strong>Sexo:</strong> ${petData.petSex === 'm' ? 'MACHO' : 'FÊMEA'}</p>
+        <p><strong>Pet:</strong> ${petData.type.toUpperCase()} </p>
+        <p style="width:50%"><strong>Raça:</strong> ${petData.petBreed.toUpperCase()} (${petData.color.toUpperCase()})</p>
+        <p style="width:60%"><strong>Naturalidade:</strong> ${petData.petOrigin} (${petData.birthDate.split("-").reverse().join("/")})</p>
+        <p style="width:20%"><strong>Castrado:</strong> ${petData.petNeutered === 's' ? 'SIM' : 'NÃO'}</p>
+        <p style="width:80%"><strong>Nome do Tutor:</strong> ${petData.ownerName.toUpperCase()}</p>
+        <p style="width:80%"><strong>WhatsApp do Tutor:</strong> ${petData.ownerWhatsapp}</p>
     `;
 
     generateQRCode(window.location.href);
