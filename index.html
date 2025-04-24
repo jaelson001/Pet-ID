@@ -13,8 +13,13 @@
         <h1 class="text-center mb-4">Preencha os campos abaixo para gerar o Pet ID</h1>
         <form id="pet-registration-form" class="row g-3">
             <div class="col-md-6">
-                <label for="pet-name" class="form-label">Nome do pet:</label>
-                <input type="text" id="pet-name" name="pet-name" class="form-control" required>
+                <label for="pet-type" class="form-label">Animal:</label>
+                <input type="text" id="pet-type" name="pet-type" class="form-control border border-success" placeholder="Ex.: Cachorro" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="pet-name" class="form-label">Nome do animal:</label>
+                <input type="text" id="pet-name" name="pet-name" class="form-control border border-success" placeholder="Ex.: Toto" required>
             </div>
 
             <div class="col-md-6">
@@ -30,26 +35,6 @@
             </div>
 
             <div class="col-md-6">
-                <label for="pet-type" class="form-label">Pet:</label>
-                <input type="text" id="pet-type" name="pet-type" class="form-control" required>
-            </div>
-
-            <div class="col-md-6">
-                <label for="pet-breed" class="form-label">Raça do pet:</label>
-                <input type="text" id="pet-breed" name="pet-breed" class="form-control" required>
-            </div>
-
-            <div class="col-md-6">
-                <label for="pet-birthdate" class="form-label">Data de Nascimento:</label>
-                <input type="date" id="pet-birthdate" name="pet-birthdate" class="form-control" required>
-            </div>
-
-            <div class="col-md-6">
-                <label for="pet-color" class="form-label">Cor do Animal:</label>
-                <input type="text" id="pet-color" name="pet-color" class="form-control" required>
-            </div>
-
-            <div class="col-md-6">
                 <label for="pet-neutered" class="form-label">Castrado:</label>
                 <div class="form-check">
                     <input type="radio" id="s" name="pet-neutered" class="form-check-input" required value="s">
@@ -62,22 +47,37 @@
             </div>
 
             <div class="col-md-6">
+                <label for="pet-breed" class="form-label">Raça do pet:</label>
+                <input type="text" id="pet-breed" name="pet-breed" class="form-control border border-success" placeholder="Ex.: bulldog" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="pet-color" class="form-label">Cor do Pet:</label>
+                <input type="text" id="pet-color" name="pet-color" class="form-control border border-success" placeholder="Ex.: rajado" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="pet-birthdate" class="form-label">Data de Nascimento:</label>
+                <input type="date" id="pet-birthdate" name="pet-birthdate" class="form-control border border-success" required>
+            </div>
+
+            <div class="col-md-6">
                 <label for="pet-origin" class="form-label">Naturalidade do pet:</label>
-                <input type="text" id="pet-origin" name="pet-origin" class="form-control" required>
+                <input type="text" id="pet-origin" name="pet-origin" class="form-control border border-success" placeholder="Ex.: São Paulo-SP" required>
             </div>
             <hr>
             <div class="col-md-6">
                 <label for="owner-name" class="form-label">Nome do tutor:</label>
-                <input type="text" id="owner-name" name="owner-name" class="form-control" required>
+                <input type="text" id="owner-name" name="owner-name" class="form-control border border-success" placeholder="Ex.: João da Silva" required>
             </div>
 
             <div class="col-md-6">
                 <label for="owner-whatsapp" class="form-label">WhatsApp do tutor (somente números):</label>
-                <input type="text" id="owner-whatsapp" name="owner-whatsapp" class="form-control" required>
+                <input type="text" id="owner-whatsapp" name="owner-whatsapp" class="form-control border border-success" placeholder= "Ex.: 11 999 888 777" required>
             </div>
 
             <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary">Gerar ID do pet</button>
+                <button type="submit" class="btn btn-dark">Gerar ID do pet</button>
             </div>
         </form>
     </div>
