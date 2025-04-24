@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p style="width:20%"><strong>Sexo:</strong> ${petData.petSex === 'm' ? 'MACHO' : 'FÊMEA'}</p>
         <p><strong>Pet:</strong> ${petData.type.toUpperCase()} </p>
         <p style="width:50%"><strong>Raça:</strong> ${petData.petBreed.toUpperCase()} (${petData.color.toUpperCase()})</p>
-        <p style="width:60%"><strong>Naturalidade:</strong> ${petData.petOrigin} (${petData.birthDate.split("-").reverse().join("/")})</p>
+        <p style="width:60%"><strong>Naturalidade:</strong> ${petData.petOrigin.toUpperCase()} (${petData.birthDate.split("-").reverse().join("/")})</p>
         <p style="width:20%"><strong>Castrado:</strong> ${petData.petNeutered === 's' ? 'SIM' : 'NÃO'}</p>
         <p style="width:80%"><strong>Nome do Tutor:</strong> ${petData.ownerName.toUpperCase()}</p>
         <p style="width:80%"><strong>WhatsApp do Tutor:</strong> ${petData.ownerWhatsapp}</p>
